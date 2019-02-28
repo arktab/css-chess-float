@@ -1,0 +1,76 @@
+:root {
+
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+	transition: all .3s ease-in-out;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body, html {
+	min-height: 100%;
+	width: 100%;
+}
+
+.clear::after, .clear::before {
+	content: " ";
+	display: table;
+}
+
+.clear::after {
+	clear: both;
+}
+
+.ch_desk{
+	height: 820px;
+	width: 820px;
+	background: #FFF;
+	margin: 100px auto;
+	border: 10px solid green;
+
+
+}
+/* .cell*/
+.cell{
+	width: 100px;
+	height: 100px;
+	background: black;
+}
+
+.row:nth-child(odd) .cell{
+	margin-left: 100px;
+	float: right;
+}
+
+.row:nth-child(even) .cell{
+	margin-right: 100px;
+	float: left;
+}
+
+.white .cell:before{
+	content: " ";
+	position: absolute;
+	height:75px;
+	width: 75px;
+	margin: 12.5px;
+	background: white;
+	border-radius: 50%;
+}
+ .black .cell:before{
+	content: " ";
+	position: absolute;
+	height:75px;
+	width: 75px;
+	margin: 12.5px;
+	background: gray;
+	border-radius: 50%;
+} 
